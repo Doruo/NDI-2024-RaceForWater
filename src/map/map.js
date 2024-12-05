@@ -63,4 +63,32 @@ whiteBoard.addEventListener("touchmove", (e) => {
 whiteBoard.addEventListener("touchend", () => {
     isDragging = false;
   });
+
+
+        
+        let count = 0;
+
+    
+        while (count < 30) {
+            const div = document.createElement('div'); 
+            div.className = `mapview__tiem`;
+
+
+
+            const img = document.createElement('img');
+            img.src = `/ressources/poisson1`; 
+            img.alt = `poisson`; 
+            img.className = `clickable`; 
+            img.width = `30`
+            img.style.margin = '5px';
+
+
+            div.appendChild(img);            
+            whiteBoard.appendChild(div); 
+            count++; 
+        }
+
+        
   
+
+        

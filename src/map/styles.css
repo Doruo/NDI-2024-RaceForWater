@@ -12,7 +12,7 @@ img.clickable:hover {
 }
 
 .mapview__background {
-    padding: 55%;
+    padding: 100%;
     animation: eauAnimee 2s ease infinite;
 }
 
