@@ -1,11 +1,23 @@
-import { createServer } from 'node:http';
+const express = require ('express'); 
+const fs = require('fs').promises;
 
-const server = createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World!\n');
+const app = express();
+
+// src/vue/test.html
+
+// Ajouter une route de base
+app.get('/', async (req, res) => {
+
+    try {
+      const data = await fs.readFile('./index.html', 'utf8'); 
+      res.send(data); 
+    }
+    catch (err) {
+      console.error(err);
+      res.status(500).send('Error reading file'); 
+    }
 });
 
-// starts a simple http server locally on port 3000
-server.listen(3000, '127.0.0.1', () => {
-    console.log('Listening on 127.0.0.1:3000');
+app.listen(3000, () => {
+  console.log('Server is listening on port 3000');
 });
