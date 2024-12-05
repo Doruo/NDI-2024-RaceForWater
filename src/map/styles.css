@@ -9,32 +9,33 @@ img.clickable:hover {
 }
 
 body {
+    /*padding: 50%;*/
     animation: eauAnimee 2s ease infinite;
 }
 
 @keyframes eauAnimee {
     0% {
-        background-image: url("img/eau/frame_1.png");
+        background-image: url("frame_1.png");
     }
     15% {
-        background-image: url("img/eau/frame_2.png");
+        background-image: url("frame_2.png");
     }
     30% {
-        background-image: url("img/eau/frame_3.png");
+        background-image: url("frame_3.png");
     }
     45% {
-        background-image: url("img/eau/frame_4.png");
+        background-image: url("frame_4.png");
     }
     60% {
-        background-image: url("img/eau/frame_5.png");
+        background-image: url("frame_5.png");
     }
     75% {
-        background-image: url("img/eau/frame_6.png");
+        background-image: url("frame_6.png");
     }
     90% {
-        background-image: url("img/eau/frame_7.png");
+        background-image: url("frame_7.png");
     }
     100% {
-        background-image: url("img/eau/frame_8.png");
+        background-image: url("frame_8.png");
     }
 }
