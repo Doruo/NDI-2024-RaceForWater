@@ -11,8 +11,8 @@ img.clickable:hover {
     transform: scale(1.2);
 }
 
-body {
-    /*padding: 50%;*/
+.mapview__background {
+    padding: 55%;
     animation: eauAnimee 2s ease infinite;
 }
 
