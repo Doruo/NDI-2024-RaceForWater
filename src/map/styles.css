@@ -1,0 +1,9 @@
+img.clickable {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img.clickable:hover {
+    transform: scale(1.2);
+}
