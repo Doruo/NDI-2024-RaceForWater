@@ -1,0 +1,30 @@
+#boîte {
+    background-color: white;
+    border-style: solid;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zone-input {
+    background-color: sandybrown;
+    width: 67%;
+    height: 50%;
+}
+
+#zone-click {
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    display: flow;
+}
+
+.cache {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
