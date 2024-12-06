@@ -1,0 +1,57 @@
+body{
+    overflow: hidden;
+}
+
+.loading {
+    display: none;
+}
+
+#white-board{
+    width: 5000px;
+    height: 5000px;
+    position: relative;
+}
+
+.mapview__item{
+    position: absolute;
+}
+
+img.clickable {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img.clickable:hover {
+    transform: scale(1.2);
+}
+
+.mapview__background {
+    animation: eauAnimee 2s ease infinite;
+}
+
+@keyframes eauAnimee {
+    0% {
+        background-image: url("../images/frame_1.png");
+    }
+    15% {
+        background-image: url("../images/frame_2.png");
+    }
+    30% {
+        background-image: url("../images/frame_3.png");
+    }
+    45% {
+        background-image: url("../images/frame_4.png");
+    }
+    60% {
+        background-image: url("../images/frame_5.png");
+    }
+    75% {
+        background-image: url("../images/frame_6.png");
+    }
+    90% {
+        background-image: url("../images/frame_7.png");
+    }
+    100% {
+        background-image: url("../images/frame_8.png");
+    }
+}
