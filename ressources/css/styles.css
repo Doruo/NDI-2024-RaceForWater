@@ -31,27 +31,27 @@ img.clickable:hover {
 
 @keyframes eauAnimee {
     0% {
-        background-image: url("frame_1.png");
+        background-image: url("../images/frame_1.png");
     }
     15% {
-        background-image: url("frame_2.png");
+        background-image: url("../images/frame_2.png");
     }
     30% {
-        background-image: url("frame_3.png");
+        background-image: url("../images/frame_3.png");
     }
     45% {
-        background-image: url("frame_4.png");
+        background-image: url("../images/frame_4.png");
     }
     60% {
-        background-image: url("frame_5.png");
+        background-image: url("../images/frame_5.png");
     }
     75% {
-        background-image: url("frame_6.png");
+        background-image: url("../images/frame_6.png");
     }
     90% {
-        background-image: url("frame_7.png");
+        background-image: url("../images/frame_7.png");
     }
     100% {
-        background-image: url("frame_8.png");
+        background-image: url("../images/frame_8.png");
     }
 }
