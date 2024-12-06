@@ -1,7 +1,11 @@
 const express = require ('express'); 
 const fs = require('fs').promises;
 
+const path = require('path');
 const app = express();
+
+// Servir les fichiers statiques à partir de 'src/vue/js'
+app.use('/js', express.static(path.join(__dirname, '../vue/js')));
 
 app.get('/', async (req, res) => {
 
