@@ -6,6 +6,7 @@ const app = express();
 // Servir les fichiers statiques
 app.use('/src', express.static(path.join(__dirname, 'src')));
 app.use('/ressources', express.static(path.join(__dirname, 'ressources')));
+//app.use('/js', express.static(path.join(__dirname, 'ressources/js')));
 
 app.get('/', async (req, res) => {
   try {
