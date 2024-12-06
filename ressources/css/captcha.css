@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divWinCaptcha {
+    position: fixed;
+    z-index: 500;
+    background-color: green;
+    height: 8%;
+    min-height: 20px; /* Définit une hauteur minimale explicite */
+    width: 20%; /* Facultatif pour limiter la largeur */
+}
+
+#divPlongerCaptcha {
+    position: relative; /* Nécessaire pour positionner le player à l'intérieur */
+    border: solid black 1px;
+    background-color: blue;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player {
+    z-index: 999;
+    border: solid black 5px;
+    position: absolute;
+    
+}
