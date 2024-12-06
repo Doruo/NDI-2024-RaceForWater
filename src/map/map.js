@@ -8,21 +8,28 @@ document.addEventListener('DOMContentLoaded', () => {
     let y = -2500 + window.innerHeight / 2;
 
     let count = 0;
-    while (count < 30) {
+    while (count < 300) {
         const div = document.createElement('div');
         div.className = `mapview__item`;
 
         const img = document.createElement('img');
-        img.src = `/ressources/poisson1`;
+        img.src = `/ressources/fish.png`;
         img.alt = `poisson`;
         img.className = `clickable`;
         img.width = `30`
+
+        let rotation = Math.random() * 200 ; 
+        img.rotate
         img.style.margin = '5px';
+        img.style.transform = `rotate(${rotation}deg)`;
 
         div.appendChild(img);
         whiteBoard.appendChild(div);
         count++;
+        
     }
+
+    
 
     const mapItems = document.querySelectorAll('.mapview__item');
     mapItems.forEach(item => {
@@ -47,8 +54,99 @@ document.addEventListener('DOMContentLoaded', () => {
         //     duration: 0.2,
         //     ease: "power2.out",
         // });
-        whiteBoard.style.top = y + "px";
-        whiteBoard.style.left = x + "px";
+        const maxY = 200;
+        console.log(y); 
+        if (y > maxY) {
+            console.log("Rollback triggered");
+    
+            // Définir la position cible pour le rollback
+            const rollbackY = maxY;
+    
+            // Utiliser une animation (par exemple, GSAP ou CSS transitions) pour ramener à rollbackY
+            gsap.to(whiteBoard, {
+                top: `${rollbackY}px`,
+                duration: 0.5, // Durée de l'animation en secondes
+                ease: "power2.out",
+                onUpdate: () => {
+                    // Mettre à jour la valeur `y` pour suivre l'animation
+                    const computedStyle = window.getComputedStyle(whiteBoard);
+                    y = parseFloat(computedStyle.top);
+                }
+            });
+        }
+        if (y < - 4500){
+            console.log("Rollback triggered");
+    
+            // Définir la position cible pour le rollback
+            const rollbackY = -4500;
+    
+            // Utiliser une animation (par exemple, GSAP ou CSS transitions) pour ramener à rollbackY
+            gsap.to(whiteBoard, {
+                top: `${rollbackY}px`,
+                duration: 0.5, // Durée de l'animation en secondes
+                ease: "power2.out",
+                onUpdate: () => {
+                    // Mettre à jour la valeur `y` pour suivre l'animation
+                    const computedStyle = window.getComputedStyle(whiteBoard);
+                    y = parseFloat(computedStyle.top);
+                }
+            });
+
+        }
+
+
+
+
+
+
+
+
+        if (x < -3300) {
+            console.log("Rollback triggered");
+    
+            // Définir la position cible pour le rollback
+            const rollbackX = -3300;
+    
+            // Utiliser une animation (par exemple, GSAP ou CSS transitions) pour ramener à rollbackY
+            gsap.to(whiteBoard, {
+                left: `${rollbackX}px`,
+                duration: 0.5, // Durée de l'animation en secondes
+                ease: "power2.out",
+                onUpdate: () => {
+                    // Mettre à jour la valeur `y` pour suivre l'animation
+                    const computedStyle = window.getComputedStyle(whiteBoard);
+                    x = parseFloat(computedStyle.left);
+                }
+            });
+        }
+        console.log(x)
+        if (x > 300) {
+            console.log("Rollback triggered");
+    
+            // Définir la position cible pour le rollback
+            const rollbackX = 300;
+    
+            // Utiliser une animation (par exemple, GSAP ou CSS transitions) pour ramener à rollbackY
+            gsap.to(whiteBoard, {
+                left: `${rollbackX}px`,
+                duration: 0.5, // Durée de l'animation en secondes
+                ease: "power2.out",
+                onUpdate: () => {
+                    // Mettre à jour la valeur `y` pour suivre l'animation
+                    const computedStyle = window.getComputedStyle(whiteBoard);
+                    x = parseFloat(computedStyle.left);
+                }
+            });
+        }
+        
+        
+        
+        else {
+            // Mettre à jour la position sans rollback
+            whiteBoard.style.top = y + "px";
+            whiteBoard.style.left = x + "px";
+        }
+        
     }
 
     whiteBoard.addEventListener("mousedown", (element) => {
