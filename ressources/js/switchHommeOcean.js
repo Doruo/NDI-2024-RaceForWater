@@ -8,7 +8,7 @@ function alternerEtat(){
     let etat = lieu === "ocean" ? "homme" : "ocean";
     
     let fichierToCall = etat+"_"+organe;
-    window.location.href = `/${fichierToCall}`;
+    window.location.href = `/src/vue/${fichierToCall}.html`;
     //window.location.href = 'ocean_coeur.html';
 }
 

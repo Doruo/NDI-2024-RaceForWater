@@ -1,43 +1,67 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer type="text/javascript" src="js/switchHommeOcean.js"></script>
-    <title>Importance d'un cœur en bonne santé</title>
+    <title>L'importance de l'alimentation et du microbiome intestinal</title>
+    <script defer type="text/javascript" src="../../ressources/js/switchHommeOcean.js"></script>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <button id="buttonSwitchEtatHommeOcean" onclick="alternerEtat()">ocean</button>
-</header>
+    <header class="text-center py-4" style="background-color: #f5f5dc; color: #4a4a4a; border-bottom: 3px solid #d2b48c;">
+        <div class="container">
+            <h1 class="fw-bold">L'importance de l'alimentation et du microbiome intestinal</h1>
+            <p class="fst-italic">Prenez soin de votre bien-être avec une approche naturelle</p>
+        </div>
+    </header>
+    
+<main class="container my-5">
+    <div class="text-center">
+        <a href="../map/map.html">Retour sur la carte</a>
+    </div>
+    <h2 class="text-center">Pourquoi l'alimentation et un microbiome intestinal sain sont essentiels</h2>
+    <p class="text-center">Découvrez comment votre santé intestinale impacte votre bien-être global.</p>
 
-<main>
-    <h1>Pourquoi avoir un cœur en bonne santé est essentiel</h1>
+    <div class="text-center my-4">
+        <button type="button" class="btn btn-success btn-lg" onclick="alternerEtat()"  data-bs-toggle="modal" data-bs-target="#bodyModal">
+            Explorer l'océan
+        </button>
+    </div>
+
     <section>
-        <h2>Les avantages d'un cœur en bon état</h2>
+        <h2>Les avantages d'un microbiome intestinal équilibré</h2>
         <ul>
-            <li><h3>Un corps mieux oxygéné et plus énergique</h3></li>
-            <p>Un cœur en pleine forme assure une circulation du sang optimale, ce qui permet à l’oxygène et aux nutriments d’atteindre efficacement chaque cellule. Cela se traduit par une énergie accrue, une meilleure concentration, et une capacité à accomplir les tâches du quotidien avec plus de facilité. Ce fonctionnement harmonieux aide également à réduire la fatigue chronique et améliore globalement la qualité de vie.</p>
-            <li><h3>Une barrière contre les maladies chroniques</h3></li>
-            <p>Un cœur sain réduit considérablement les risques de développer des pathologies graves comme les infarctus, les AVC ou l’hypertension. Par ailleurs, il agit comme un bouclier contre d’autres maladies associées, comme le diabète de type 2 et certains troubles rénaux, en maintenant une circulation sanguine équilibrée. Ces bénéfices prolongent non seulement l’espérance de vie mais augmentent aussi les années de vie en bonne santé.</p>
-            <li><h3>Un bien-être mental et un vieillissement ralenti</h3></li>
-            <p>Une bonne santé cardiovasculaire ne profite pas qu’au corps; elle a également des impacts positifs sur le moral. Un cœur qui fonctionne bien régule efficacement le stress et prévient les états anxieux ou dépressifs. De plus, il contribue à un vieillissement plus doux, en ralentissant le déclin cognitif et en préservant la vitalité des organes et de la peau.</p>
+            <li><h3>Une meilleure digestion et absorption des nutriments</h3></li>
+            <p>Un microbiome intestinal sain joue un rôle crucial dans la dégradation des aliments et l'absorption des nutriments essentiels à l'organisme, comme les vitamines et les minéraux. Cela permet au corps de fonctionner de manière optimale.</p>
+            <li><h3>Un système immunitaire renforcé</h3></li>
+            <p>Le microbiome intestinal est lié à une meilleure régulation du système immunitaire. Il aide à protéger l’organisme contre les infections en favorisant un environnement propice à des bactéries bénéfiques tout en empêchant la prolifération de pathogènes.</p>
+            <li><h3>Un impact sur la santé mentale</h3></li>
+            <p>Un microbiome intestinal en bonne santé est lié à un meilleur bien-être mental. Des recherches ont montré que l’équilibre des bactéries intestinales peut influencer l’humeur, la gestion du stress et des troubles comme l’anxiété ou la dépression.</p>
         </ul>
     </section>
 
     <section>
-        <h2>Les conséquences d'un dysfonctionnement du cœur</h2>
+        <h2>Les conséquences d'un microbiome intestinal déséquilibré</h2>
         <ul>
-            <li><h3>Une baisse d’énergie et des problèmes respiratoires</h3></li>
-            <p>Un cœur qui fonctionne mal entraîne une diminution de la quantité d’oxygène distribuée dans le corps. Cela provoque une fatigue chronique, même en l’absence d’efforts physiques importants. De plus, une mauvaise circulation peut entraîner des congestions pulmonaires, causant essoufflements et difficulté à respirer, même lors d’activités légères.</p>
-            <li><h3>Des risques accrus de complications graves</h3></li>
-            <p>Les pathologies cardiovasculaires comme les infarctus, les AVC ou l’insuffisance cardiaque sont directement liées à un cœur en mauvaise santé. Ces affections, souvent dues à des artères obstruées ou à une faiblesse du muscle cardiaque, peuvent entraîner des conséquences dramatiques, y compris des incapacités permanentes ou la mort subite.</p>
-            <li><h3>Une atteinte globale des organes et de la santé mentale</h3></li>
-            <p>Lorsque le cœur est déficient, les autres organes en souffrent également. Les reins, le cerveau et le foie sont souvent affectés par le manque de circulation sanguine adéquate. En parallèle, le stress lié à la gestion de maladies cardiovasculaires peut entraîner des troubles psychologiques, comme l’anxiété et la dépression, aggravant encore la situation générale.</p>
+            <li><h3>Des troubles digestifs</h3></li>
+            <p>Un microbiome intestinal déséquilibré peut entraîner des problèmes digestifs tels que des ballonnements, des douleurs abdominales, de la constipation ou des diarrhées. Cela peut également augmenter la sensibilité aux maladies inflammatoires intestinales, comme la maladie de Crohn ou la colite ulcéreuse.</p>
+            <li><h3>Un affaiblissement du système immunitaire</h3></li>
+            <p>Un microbiome altéré peut perturber la réponse immunitaire, augmentant la vulnérabilité aux infections et à certaines pathologies chroniques. Un déséquilibre de la flore intestinale est également lié à des maladies auto-immunes.</p>
+            <li><h3>Un impact sur la santé mentale et le comportement</h3></li>
+            <p>Les déséquilibres du microbiome intestinal peuvent affecter le cerveau en perturbant la production de neurotransmetteurs tels que la sérotonine, influençant l’humeur, le stress et la cognition. Un microbiome en déséquilibre pourrait être associé à des troubles de l’humeur et à des maladies psychiatriques.</p>
         </ul>
     </section>
 </main>
 
-<footer></footer>
-    
+<footer class="bg-dark fixed-bottom text-white text-center py-3">
+    <p>&copy; 2024 - Santé et Bien-être</p>
+</footer>
+
+<!-- Lien vers Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
+
