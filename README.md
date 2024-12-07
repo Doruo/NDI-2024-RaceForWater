@@ -1,5 +1,5 @@
 # NUIT DE L'INFO 2024 - RACE FOR WATER 
-## Réalisé par l'équipe PouleGang
+## Réalisée par l'équipe PouleGang
 
 Application ludique faite entièrement par une équipe humaine, avec **Node.js**, **Express** pour la fondation Race for Water, qui a pour mission de préserver l'eau et les océans en particulier face à la pollution plastique.
 
