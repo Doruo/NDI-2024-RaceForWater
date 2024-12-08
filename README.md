@@ -11,12 +11,12 @@ Carte interactive de la mer, avec dessins en pixel art décrivant des éléments
 - Système immunitaire -> Corail
 - Système nerveux -> Ondes
 
-Chaque élément renvoie vers une fiche informative et qui renvoie vers leur équivalent marin ou humain.
+Chaque élément renvoie vers une fiche informative, dans laquelle vous pouvez choisir entre leur équivalent marin ou humain.
 Naviguez dans l'océan, et vous découvrirez un lien puissant entre l'eau et votre corps humain !
 
 ## Pour lancer notre site :
 ### 1) Téléchargez le fichier zip.
-### 3) Ouvrez un terminal à la racine du projet, et entrez la commande `node server.js` pour le démarer.
+### 3) Ouvrez un terminal à la racine du projet, et entrez la commande `node server.js` pour démarrer l'application.
 ### 4) Une fois cela fait, entrez `127.0.0.1:3000` dans la barre de votre navigateur web.
 
 ### PS : Le podcast sera renvoyé par l'élément cœur sur notre site.
